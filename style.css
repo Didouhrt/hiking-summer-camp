@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap");
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  position: relative;
+  color: #555;
+  font-family: "montserrat",sans-serif;
+}
+section{
+  position: absolute;
+  inset: 0;
+}
+.bg{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 80%;
+}
+.shape{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 45%;
+}
+nav{
+  position: absolute;
+  top: 2rem;
+  right: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  z-index: 1;
+}
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8rem;
+  border-radius: 100vw;
+  padding: .3rem 1rem;
+  color: #555;
+  font-weight: 700;
+}
+nav a:hover , .active{
+  background: #fff;
+}
+.content{
+  position: relative;
+  padding: 2rem 4rem;
+  width: 40%;
+}
+.logo img {
+  width: 4rem;
+  margin-bottom: 1.5rem;
+}
+.content h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.content h1 span {
+  color: #deb37e;
+}
+.content p {
+  font-size: .9rem;
+  margin-block: 1rem;
+}
+button {
+  border: none;
+  background: #deb37e;
+  color: #fff;
+  padding: .5rem 1.5rem;
+  border-radius: 100vw;
+  transition: .3s ease-in-out;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+button:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 5px 5px #6a4314b3;
+}
+.social_icon{
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.social_icon ion-icon {
+  background: #555;
+  color: #fff;
+  border-radius: 50%;
+  padding: .3rem;
+  transition: .3s ease-in-out;
+}
+.social_icon ion-icon:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  background: #deb37e;
+  color: #fff;
+}
+*::selection {
+  background: #555;
+  color: #deb37e;
+}
